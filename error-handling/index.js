@@ -15,5 +15,8 @@ module.exports = (app) => {
         message: "Internal server error. Check the server console",
       });
     }
+    if (err.name === "UnauthorizedError") {
+      res.status(401).json({message: "invalid token..."});
+    }
   });
 };
