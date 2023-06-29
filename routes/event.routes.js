@@ -99,7 +99,7 @@ router.put('/events/:eventId', (req, res, next) => {
     }
 
     Event.findByIdAndUpdate(eventId, newDetails, { new: true })
-        .then((updatedEvent) => res.json(updatEdevent))
+        .then((updatedEvent) => res.json(updatedEvent))
         .catch(err => {
             console.log("error updating event", err);
             res.status(500).json({
