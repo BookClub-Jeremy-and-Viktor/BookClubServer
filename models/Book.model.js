@@ -4,8 +4,9 @@ const { Schema, model } = mongoose;
 const bookSchema = new Schema({
   title: String,
   author: String,
+  description: String,
   genre: String,
-  availability: Boolean,
+  availability: String,
   event: { type: Schema.Types.ObjectId, ref: "Event" },
 });
 

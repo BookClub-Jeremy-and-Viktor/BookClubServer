@@ -5,6 +5,13 @@ const mongoose = require("mongoose");
 const Book = require("../models/Book.model");
 const Event = require("../models/Event.model");
 
+// GET /api/books - Retrieves a list of all books
+router.get("/books", (req, res, next) => {
+  Book.find()
+    .then((books) => res.json(books))
+    .catch((error) => res.json(error));
+});
+
 //  POST /api/books  -  Creates a new book
 router.post("/books", (req, res, next) => {
   const { title, description, author, genre, availability, eventId } = req.body;
