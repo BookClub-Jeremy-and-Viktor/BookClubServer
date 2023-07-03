@@ -7,7 +7,9 @@ const bookSchema = new Schema({
   description: String,
   genre: String,
   availability: String,
-  event: { type: Schema.Types.ObjectId, ref: "Event" },
+  comments: [String],
+
+  event: [{ type: Schema.Types.ObjectId, ref: "Event" }],
 });
 
 module.exports = model("Book", bookSchema);
