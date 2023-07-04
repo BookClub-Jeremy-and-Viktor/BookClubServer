@@ -28,7 +28,7 @@ const eventRouter = require("./routes/event.routes");
 app.use("/api", isAuthenticated, eventRouter);
 
 const bookRouter = require("./routes/book.routes");
-app.use("/api", bookRouter);
+app.use("/api", isAuthenticated, bookRouter);
 
 const moviesRouter = require("./routes/movies.routes"); 
 app.use('/api', isAuthenticated, moviesRouter); 
