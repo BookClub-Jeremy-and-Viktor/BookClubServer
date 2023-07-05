@@ -8,6 +8,7 @@ const bookSchema = new Schema({
   genre: String,
   availability: String,
   comments: [String],
+  imageUrl: String,
 
   event: [{ type: Schema.Types.ObjectId, ref: "Event" }],
 });
