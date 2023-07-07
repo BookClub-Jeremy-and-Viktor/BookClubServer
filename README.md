@@ -48,5 +48,5 @@ Now you can start developing.
 
 ## Contributors
 
-- Jeremy Couderc
+- JCouderc87
 - Thanks to the Ironhack team and their support
