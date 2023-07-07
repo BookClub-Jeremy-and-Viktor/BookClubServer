@@ -14,11 +14,11 @@ router.get("/books", (req, res, next) => {
 
 //  POST /api/books  -  Creates a new book
 router.post("/books", (req, res, next) => {
-  const { title, description, author, genre, availability, comments, eventId } = req.body;
+  const { title, description, author, genre, availability, comments, imageUrl, eventId } = req.body;
 
-  Book.create({ title, description, author, genre, availability, comments, event: eventId })
+  Book.create({ title, description, author, genre, availability, comments, imageUrl, event: eventId })
     .then((newBook) => {
-      return Event.findByIdAndUpdate(EventId, {
+      return Event.findByIdAndUpdate(eventId, {
         $push: { books: newBook._id },
       });
     })
