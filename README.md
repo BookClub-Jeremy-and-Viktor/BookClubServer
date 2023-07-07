@@ -9,6 +9,10 @@ There are 3 models, User, Event and Book.
 The Book and Event models include all CRUD actions.
 The User - CR.
 
+## Github Repo Book Club Client
+
+[Book Club Client: ](https://github.com/BookClub-Jeremy-and-Viktor/BookClubClient.git)
+
 
 ## Demo
 
