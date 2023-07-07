@@ -1,5 +1,3 @@
-![Book Club logo](https://https://book-club-events.netlify.app/images/bookclub2.png)
-
 # Project 3 | Book Club Server - Backend
 
 ## Description
@@ -21,7 +19,7 @@ The User - CR.
 This project was installed using the command:
 
 ```bash
-$ npx --yes ironlauncher@latest project-management-server --auth --json
+$ npx --yes ironlauncher@latest --auth --json
 ```
 
 ## Run this app
